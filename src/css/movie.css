@@ -1,0 +1,6 @@
+.movie_container {
+    /* background-color: rgb(170, 130, 78); */
+    display: flex;
+    max-width: 418px;
+    max-height: 293px;
+}

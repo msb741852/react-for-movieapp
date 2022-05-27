@@ -1,6 +1,22 @@
 .movie_container {
-    /* background-color: rgb(170, 130, 78); */
+    background-color: rgb(136, 136, 135);
     display: flex;
-    max-width: 418px;
     max-height: 293px;
+    box-shadow: 10px 5px 5px rgb(119, 119, 119);
+}
+
+.movie_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.movie_info h2 {
+    margin: 0;
+}
+
+.movie_info li {
+    color: rgb(238, 238, 238);
+    font-weight: bold;
 }

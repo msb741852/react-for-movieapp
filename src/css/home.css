@@ -1,5 +1,28 @@
 .grid_container {
+    position: relative;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);   
     gap: 2rem;
+}
+
+.flexBox {
+    display: flex;
+    align-items: center;
+}
+
+#prevBtn {
+    background: none;
+    border: none;
+    width: auto;
+    height: fit-content;
+}
+
+#nextBtn {
+    background: none;
+    border: none;
+    height: fit-content;
+}
+
+#prevBtn>img:hover, #nextBtn>img:hover {
+    filter: invert(86%) sepia(0%) saturate(6900%) hue-rotate(71deg) brightness(110%) contrast(117%);
 }

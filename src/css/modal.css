@@ -1,0 +1,48 @@
+.modal_box {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 50%;
+    height: 120%;
+    top: -10%;
+    margin-left: 25%;
+    background-color: rgb(82, 77, 77);
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 18px;
+    color: white;
+}
+
+
+.modal_box img {
+    width: 50%;
+}
+
+.modal_box ul {
+    display: flex;
+}
+
+.modal_box li {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid rgb(161, 161, 161);
+    border-radius: 20px;
+    background-color: rgb(161, 161, 161);
+    font-weight: bold;
+    color: black;
+}
+
+.modal_box button {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    width: 60px;
+}
+
+.modal_box button:hover {
+    filter: invert(86%) sepia(0%) saturate(6900%) hue-rotate(71deg) brightness(110%) contrast(117%);
+}

@@ -1,8 +1,7 @@
 import PropTypes from "prop-types";
-import {Link} from 'react-router-dom';
 import '../css/movie.css';
 
-function Movie({idx, id, medium_cover_image, title, summary, genres, onPopup, onSetCurrMovie}) {
+function Movie({idx, medium_cover_image, title, summary, genres, onPopup, onSetCurrMovie}) {
     return(<>
         <div className="movie_container" id={idx} onClick={(event) => {
           onPopup();
@@ -13,9 +12,9 @@ function Movie({idx, id, medium_cover_image, title, summary, genres, onPopup, on
           <div id={idx} className="movie_info">
             {/* <h2><Link to={`/movie/${id}`}>{title}</Link></h2> */}
             <h2 id={idx}>{title}</h2>
-            <ul id={idx}>
+            {/* <ul id={idx}>
               {genres.map(g =><li key={g} id={idx}>{g}</li>)}
-            </ul>
+            </ul> */}
           </div>
         </div>
         </>

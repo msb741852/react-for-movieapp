@@ -5,11 +5,22 @@
     box-shadow: 10px 10px 5px rgb(97, 96, 96);
 }
 
+.movie_container:hover {
+    cursor: pointer;
+    transition: background 1s;
+    background-color: rgb(148, 207, 187);
+}
+
 .movie_info {
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
     padding: 1rem;
+}
+
+.movie_info img {
+    width: 20%;
 }
 
 .movie_info h2 {

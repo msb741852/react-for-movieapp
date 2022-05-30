@@ -58,7 +58,7 @@ function Home() {
   const currMovies = () => {
     const result = [];
     for(let i = startNum; i <= endNum; i++) {
-      result.push(<Movie idx={i} key={movies[i].id} id={movies[i].id} medium_cover_image={movies[i].medium_cover_image} title={movies[i].title} summary={movies[i].summary} genres={movies[i].genres} onPopup={onPopup} onSetCurrMovie={onSetCurrMovie}/>);
+      result.push(<Movie idx={i} key={movies[i].id} medium_cover_image={movies[i].medium_cover_image} title={movies[i].title} rating={movies[i].rating} onPopup={onPopup} onSetCurrMovie={onSetCurrMovie}/>);
     }
     return result;
   };
@@ -68,10 +68,9 @@ function Home() {
       : 
       <>
         <div className='flexBox'>
-          {modal && <Modal onClose={onClose} currMovie={currMovie} movies={movies}/>}
+          {modal && <Modal setMovies={setMovies} setLoading={setLoading} onClose={onClose} currMovie={currMovie} movies={movies}/>}
           <button id="prevBtn" onClick={prevPage}><img src={PrevBtn} /></button>        
           <div className="grid_container">
-            {/* {movies.map((movie, index) => <Movie idx={index} key={movie.id} id={movie.id} medium_cover_image={movie.medium_cover_image} title={movie.title} summary={movie.summary} genres={movie.genres} />)} */}
             {currMovies()}
           </div>
           <button id="nextBtn" onClick={nextPage}><img src={NextBtn} /></button>

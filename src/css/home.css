@@ -12,6 +12,7 @@
 }
 
 #prevBtn {
+    cursor: pointer;
     background: none;
     border: none;
     width: auto;
@@ -19,6 +20,7 @@
 }
 
 #nextBtn {
+    cursor: pointer;
     background: none;
     border: none;
     height: fit-content;

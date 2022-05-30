@@ -22,24 +22,22 @@
     border-radius: 8px;
 }
 
-
 .modal_box img {
     width: 50%;
 }
 
-.modal_box ul {
-    display: flex;
-}
-
-.modal_box li {
+.modal_box .genre_buttons button{
+    cursor: pointer;
+    border: none;
     padding: 8px;
+    margin-top: 10px;
     margin-right: 10px;
     border-radius: 20px;
     background-color: rgba(236, 236, 236, 0.801);
     font-weight: bold;
 }
 
-.modal_box button {
+.modal_box .close_button {
     background: none;
     border: none;
     position: absolute;
